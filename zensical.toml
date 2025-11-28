@@ -8,7 +8,9 @@
 
 [project]
 
-generator = false
+repo_url = "https://github.com/UCONN-ITAC/itac-docs"
+edit_uri = "edit/main/docs/"
+
 
 # The site_name is shown in the page header and the browser window title
 #
@@ -49,6 +51,12 @@ Copyright &copy; 2025 Southern New England Industrial Training and Assessment Ce
 nav = [
     {"Home" = "index.md"},
     {"Recommendations" = [
+        {"Utility" = [
+            "Recommendations/Utility/late.md", 
+            "Recommendations/Utility/tax.md", 
+            "Recommendations/Utility/pf.md", 
+            "Recommendations/Utility/switch-supply.md", 
+            ]},
         {"Compressed Air" = [
             "Recommendations/Compressed Air/measur-setup.md", 
             "Recommendations/Compressed Air/leak-repair.md", 
@@ -142,7 +150,7 @@ features = [
     # will generate an edit button for the page. This works for common
     # repository hosting services.
     # https://zensical.org/docs/setup/repository/#code-actions
-    #"content.action.edit",
+    # "content.action.edit",
 
     # If you have a repository configured and turn feature this on, Zensical
     # will generate a button that allows the user to view the Markdown
@@ -321,6 +329,8 @@ toggle.name = "Switch to light mode"
 # ----------------------------------------------------------------------------
 #[[project.extra.social]]
 #icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+#link = "https://github.com/UCONN-ITAC/itac-docs"
 
+[project.extra]
+generator = false
 
