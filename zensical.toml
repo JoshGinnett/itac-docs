@@ -51,6 +51,7 @@ Copyright &copy; 2025 Southern New England Industrial Training and Assessment Ce
 nav = [
     {"Home" = "index.md"},
     {"Recommendations" = [
+        "Recommendations/how-to.md", 
         {"Utility" = [
             "Recommendations/Utility/late.md", 
             "Recommendations/Utility/tax.md", 
