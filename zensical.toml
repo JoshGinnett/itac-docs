@@ -8,6 +8,8 @@
 
 [project]
 
+generator = false
+
 # The site_name is shown in the page header and the browser window title
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -22,19 +24,19 @@ site_description = "A new project generated from the default template project."
 # The site_author attribute. This is used in the HTML head element.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_author
-site_author = "<your name here>"
+site_author = "Southern New England Industrial Training and Assessment Center"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
 # Read more: https://zensical.org/docs/setup/basics/#site_url
-#site_url = "https://www.nikoally.github.io/"
+#site_url = "https://www.uconn-itac.github.io/docs"
 
 # The copyright notice appears in the page footer and can contain an HTML
 # fragment.
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2025 The authors
+Copyright &copy; 2025 Southern New England Industrial Training and Assessment Center
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
@@ -44,10 +46,28 @@ Copyright &copy; 2025 The authors
 # can be defined using TOML syntax.
 #
 # Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+nav = [
+    {"Home" = "index.md"},
+    {"Recommendations" = [
+        {"Compressed Air" = [
+            "Recommendations/Compressed Air/measur-setup.md", 
+            "Recommendations/Compressed Air/leak-repair.md", 
+            "Recommendations/Compressed Air/setpoint.md", 
+            "Recommendations/Compressed Air/high-eff.md", 
+            "Recommendations/Compressed Air/cold-intake.md", 
+            ]},
+    ]},
+
+    {"Training" = [
+        {"Module 1: Utility Analysis" = [
+            "Training/1-Utility/Introduction.md", 
+            "Training/1-Utility/Electricity.md", 
+            "Training/1-Utility/Natural Gas.md", 
+            "Training/1-Utility/Other Fuels.md", 
+            "Training/1-Utility/Water.md", 
+            ]},
+    ]}
+]
 
 # With the "extra_css" option you can add your own CSS styling to customize
 # your Zensical project according to your needs. You can add any number of
@@ -173,7 +193,7 @@ features = [
     # This feature turns on navigation elements in the footer that allow the
     # user to navigate to a next or previous page.
     # https://zensical.org/docs/setup/footer/#navigation
-    "navigation.footer",
+    # "navigation.footer",
 
     # When section index pages are enabled, documents can be directly attached
     # to sections, which is particularly useful for providing overview pages.
@@ -214,7 +234,7 @@ features = [
     # When tabs are enabled, top-level sections are rendered in a menu layer
     # below the header for viewports above 1220px, but remain as-is on mobile.
     # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+    "navigation.tabs",
 
     # When sticky tabs are enabled, navigation tabs will lock below the header
     # and always remain visible when scrolling down.
