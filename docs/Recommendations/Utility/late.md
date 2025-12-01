@@ -11,7 +11,7 @@ To calculate the savings from this recommendation, the late fees from each bill 
 
 ## Anticipated Costs
 
-Because there are no required equipment purchases or additional labor required, the anticipated costs for this recommendation are $0. Thus, the payback period is automaticlaly immeidate. 
+Because there are no required equipment purchases or additional labor required, the anticipated costs for this recommendation are $0. Thus, the payback period is automaticlaly immediate. 
 
 ## Report Requirements
 
