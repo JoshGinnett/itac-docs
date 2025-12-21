@@ -76,10 +76,10 @@ nav = [
     {"Training" = [
         {"Module 1: Foundaitons" = [
             "Training/Module-1/Engineering-Economics.md", 
-            "Training/1-Utility/Power-and-Energy.md", 
-            "Training/1-Utility/Utilities.md", 
-            "Training/1-Utility/Technical-Writing.md", 
-            "Training/1-Utility/LaTeX.md", 
+            "Training/Module-1/Power-and-Energy.md", 
+            "Training/Module-1/Utilities.md", 
+            "Training/Module-1/Technical-Writing.md", 
+            "Training/Module-1/LaTeX.md", 
             ]},
     ]}, 
 

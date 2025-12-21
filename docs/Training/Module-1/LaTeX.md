@@ -6,15 +6,16 @@ LaTeX seems overwhelming at first for basically everyone. It looks like you're w
 
 To get started, try watching this video: 
 
-{% include youtube.html id="lgiCpA4zzGU" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lgiCpA4zzGU?si=T04Vcj0laU6z4FQx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Then, read this article: [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes). 
 
-Now, you should have a decent familarity with the general idea of how LaTeX works. 
+Now, you should have a decent familiarity with the general idea of how LaTeX works. 
 
 ## More Advanced Concepts
 
-There's a lot more to learn in LaTeX before you're a pro. Check out these articles to learn about some more advanced concepts that we use at the ITAC every day. It'll take you a while to have this become mnuscle memory, so don't worry if you don't remember 100% of what you read. The main idea here is that you're aware of what you can do and you know where to go to find the answer. 
+There's a lot more to learn in LaTeX before you're a pro. Check out these articles to learn about some more advanced concepts that we use at the ITAC every day. It'll take you a while to have this become muscle memory, so don't worry if you don't remember 100% of what you read. The main idea here is that you're aware of what you can do and you know where to go to find the answer. 
 
 - [Tables](https://www.overleaf.com/learn/latex/Tables)
 - [Images](https://www.overleaf.com/learn/latex/Inserting_Images)
@@ -29,7 +30,7 @@ There's also a lot to learn about writing math specifically. Check these ones ou
 
 ## Reference
 
-So after you read that article about tables, you were probably a little bit scared. Fear not! Just use a [LaTeX table generator](https://www.tablesgenerator.com). This one is great because it allows you to direcly paste from excel. Make sure to change the style from "default table style" to "booktabs."
+So after you read that article about tables, you were probably a little bit scared. Fear not! Just use a [LaTeX table generator](https://www.tablesgenerator.com). This one is great because it allows you to directly paste from excel. Make sure to change the style from "default table style" to "booktabs."
 
 When you're trying to figure out how to type a strange symbol, check out this [List of LaTeX Symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols). 
 
