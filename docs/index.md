@@ -1,6 +1,5 @@
 ---
 icon: lucide/rocket
 ---
-# Start Here
 
-Welcome to ITAC!
+# Welcome to ITAC!

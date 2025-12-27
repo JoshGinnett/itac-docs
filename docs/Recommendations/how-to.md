@@ -1,8 +1,8 @@
 # How to Write a Recommendation
 
-Every recommendaiton you write will have the same 5 sections: Summary, Current Practices and Observations, Recommended Action, Anticipated Savings, and Costs and Payback. These sections will never change. You don't need to add or remove sections. Seriously, don't. 
+Every recommendation you write will have the same 5 sections: Summary, Current Practices and Observations, Recommended Action, Anticipated Savings, and Costs and Payback. These sections will never change. You don't need to add or remove sections. Seriously, don't. 
 
-When writing, do all of the math before you begin writing. The purpose of prose (as opposed to strictly calculations) is to provide necessary and useful context. If you don't know the inputs and results of the calculations are, your prose will be less-than-useful. Furthermore, write the Summary section last. In that section, you'll be pulling details from the other sections. Since you're probably not clarivoyant, this would be difficult to write first. 
+When writing, do all of the math before you begin writing. The purpose of prose (as opposed to strictly calculations) is to provide necessary and useful context. If you don't know the inputs and results of the calculations are, your prose will be less-than-useful. Furthermore, write the Summary section last. In that section, you'll be pulling details from the other sections. Since you're probably not clairvoyant, this would be difficult to write first. 
 
 ## General Notes
 
@@ -11,13 +11,29 @@ When writing, do all of the math before you begin writing. The purpose of prose 
 3. **Be Correct:** Don't be wrong. If you're unsure about something, ask. 
 
 !!! note
-    Recommendaitons should not be longer than two pages. If they are, it is either because they contain too many irrelevant details (delete these), or there are too many detailed calculations (move these to the appendix).
+    Recommendations should not be longer than two pages. If they are, it is either because they contain too many irrelevant details (delete these), or there are too many detailed calculations (move these to the appendix).
+
+### Math Style
+
+Writing out equations can be a helpful tool when communicating calculation methodology. However, too many equations makes the text feel inaccessible to people without a strong math background. So, we need to strike a balance. 
+
+A good rule of thumb is that is the equation can be described in a single sentence of normal, everyday English words, it should probably be a sentence. We'll call these equations "trivial." Common examples include simply adding a couple of numbers together or multiplication by a "simple" constant. Examples of trivial equations include: 
+
+$$
+\text{Total Cost} = \text{Labor Cost} + \text{Materials Cost}
+$$
+
+$$
+\text{Materials Cost} = \text{No. of Units} * \text{\$15 per unit}
+$$
+
+If your equation includes constants that are commonly referred to as variables ($\pi$, $e$, etc.) or includes repeated multiplication, it should be included either in the text or in the appendix. 
 
 ## Summary
 
 This should be the last section you write. It should almost always be four sentences long (one sentence for each other section), followed by the summary table. 
 
-When filling in the summary table, it may seem like your numbers don't fit the headings. They do. Group all consumption charges (Electricity, Natual Gas, etc) under the "Consumption Savings" heading. If there are multuple types of consumption savings, add both on separate lines. All parts of the implementation cost should be summed before entering them in the table. If a given cell doesn't have a value (including if the payback is immediate), keep the two hyphens. 
+When filling in the summary table, it may seem like your numbers don't fit the headings. They do. Group all consumption charges (Electricity, Natural Gas, etc) under the "Consumption Savings" heading. If there are multiple types of consumption savings, add both on separate lines. All parts of the implementation cost should be summed before entering them in the table. If a given cell doesn't have a value (including if the payback is immediate), keep the two hyphens. 
 
 Use this template for the summary table: 
 
@@ -44,11 +60,12 @@ This section establishes the baseline case: how the facility currently operates 
 
 **What to include:**
 
-1. **Quantitative data:** Present measured values, operating parameters, and relevant metrics collected during the assessment. This includes equipment nameplate data, metered readings, production rates, operating hours, and any other numerical information that characterizes current performance.
+1. **Quantitative data:** Present measured values, operating parameters, and relevant metrics collected during the assessment. This includes equipment nameplate data, metered readings, production rates, operating hours, and any other numerical information that characterizes current performance. Establish the baseline that will be used to calculate the savings. 
 
 2. **Qualitative observations:** Describe the physical condition of equipment, operational practices, layout considerations, and any contextual factors that affect system performance. Note visible issues such as leaks, damage, or suboptimal configurations.
 
 3. **Figures and visuals:** Supplement the discussion with photographs, thermal images, diagrams, or charts where they help illustrate the current state. Each figure should have a caption and be referenced in the text.
+
 
 The baseline established here serves as the reference point for all savings calculations. Be thorough and specific, as reviewers and facility personnel will use this section to verify that the recommendation applies to their situation.
 
