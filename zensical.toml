@@ -109,6 +109,7 @@ nav = [
 
         {"Module 5: Compressed Air" = [
             "Training/5-Compressed-Air/Introduction.md",
+            "Training/5-Compressed-Air/Pressure-and-Flow-Fundamentals.md",
             "Training/5-Compressed-Air/Air-Compressors.md",
             "Training/5-Compressed-Air/Distribution.md",
             "Training/5-Compressed-Air/End-Uses.md",
