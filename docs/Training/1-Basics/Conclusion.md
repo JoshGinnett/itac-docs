@@ -59,15 +59,12 @@ A manufacturing facility receives the following monthly electric bill:
 
 ### Question 4: Three-Phase Power Fundamentals
 
-A three-phase motor nameplate shows:
-- 50 HP
-- 460V
-- 3-phase
-- 60 Hz
-- Full load current: 62 A
+Consider the motor with the following nameplate. It is operating at 460 V. 
 
-**Part A:** Using the three-phase power formula (P = √3 × V × I × PF), and assuming the motor operates at full load with 0.88 power factor, calculate the actual power draw in kW.
+![The motor is rated at 50 horsepower and operates at 1180 RPM. It is a three-phase motor running at 60 Hz with a voltage rating of 230/460 volts and amperage of 120/60.1 amps. The motor has a NEMA nominal efficiency of 94.1 percent and weighs 886 pounds.](../../assets/Module-1/motor-nameplate.png)
 
-**Part B:** Calculate the motor's efficiency at this operating point.
+**Part A:** Assuming the motor operates at full load with 0.88 power factor, calculate the motor's real and apparent power. 
+
+**Part B:** Calculate the rating (in kVAR) of capacitors needed to correct the power factor to 0.95. 
 
 **Part C:** Explain why three-phase power is preferred over single-phase for motors above 5 HP.
