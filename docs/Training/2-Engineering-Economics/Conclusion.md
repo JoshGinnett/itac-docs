@@ -68,3 +68,23 @@ A manufacturing facility is evaluating a VFD installation on a 75 HP cooling tow
 **Part C:** Calculate the simple payback period.
 
 **Part D:** Based on the payback period, would you expect this project to have a positive or negative NPV at a typical industrial discount rate (10-12%)? Explain your reasoning without calculating NPV.
+
+### Question 4: Lost-Opportunity vs Retrofit Analysis
+
+A food processing facility operates a 100 HP air compressor that runs continuously during production shifts. You are evaluating the economics of replacing it with a high-efficiency variable speed drive (VSD) compressor. The equipment specifications are:
+
+- Current compressor: Standard fixed-speed, 15 years old
+- Standard fixed-speed replacement compressor: $28,000 installed
+- High-efficiency VSD compressor: $42,000 installed
+- Annual electricity consumption (current): 620,000 kWh at $0.10/kWh
+- Annual electricity consumption (VSD): 465,000 kWh at $0.10/kWh
+- Utility rebate for VSD compressor: $150 per HP
+- No change in maintenance costs
+
+**Part A:** Calculate the simple payback period if this is presented as a **retrofit** recommendation (replacing the existing functional compressor with the VSD unit).
+
+**Part B:** Calculate the simple payback period if this is presented as a **lost-opportunity** recommendation (assuming the current compressor has failed and must be replaced with either the standard unit or the VSD unit).
+
+**Part C:** Explain why the payback periods in Part A and Part B are different. What accounts for the change in economics?
+
+**Part D:** During your assessment visit, the facility manager mentions that the current compressor has been shutting down unexpectedly due to overheating. The maintenance team plans to replace it within the next 3 months. Is the retrofit or lost-opportunity calculation more relevant here? 
