@@ -57,19 +57,27 @@ Copyright &copy; 2025 Southern New England Industrial Training and Assessment Ce
 nav = [
     {"Home" = "index.md"},
     {"Recommendations" = [
-        "Recommendations/how-to.md", 
+        "Recommendations/how-to.md",
         {"Utility" = [
-            "Recommendations/Utility/late.md", 
-            "Recommendations/Utility/tax.md", 
-            "Recommendations/Utility/pf.md", 
-            "Recommendations/Utility/switch-supply.md", 
+            "Recommendations/Utility/late.md",
+            "Recommendations/Utility/tax.md",
+            "Recommendations/Utility/pf.md",
+            "Recommendations/Utility/switch-supply.md",
             ]},
         {"Compressed Air" = [
-            "Recommendations/Compressed Air/measur-setup.md", 
-            "Recommendations/Compressed Air/leak-repair.md", 
-            "Recommendations/Compressed Air/setpoint.md", 
-            "Recommendations/Compressed Air/high-eff.md", 
-            "Recommendations/Compressed Air/cold-intake.md", 
+            "Recommendations/Compressed Air/measur-setup.md",
+            "Recommendations/Compressed Air/leak-repair.md",
+            "Recommendations/Compressed Air/setpoint.md",
+            "Recommendations/Compressed Air/high-eff.md",
+            "Recommendations/Compressed Air/cold-intake.md",
+            ]},
+        {"HVAC" = [
+            "Recommendations/HVAC/hvac-retrofit.md",
+            ]},
+        {"Motors" = [
+            "Recommendations/Motors/high-efficiency.md",
+            "Recommendations/Motors/high-eff-belts.md",
+            "Recommendations/Motors/proper-size.md",
             ]},
     ]},
 

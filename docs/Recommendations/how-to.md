@@ -124,7 +124,7 @@ Subtract any continuing costs from the annual savings to obtain net annual savin
 ```latex
 \begin{align*}
 \text{Payback Period} &=
-\frac{\text{Implementation Cost}}{\text{Annual Savings}} = \frac{\CIImplementation}{\CITotalSavings} = \textbf{\CIPayback~years}
+\frac{\text{Implementation Cost}}{\text{Annual Savings}} = \frac{\XXImplementation}{\XXTotalSavings} = \textbf{\XXPayback~years}
 \end{align*}
 ```
 
