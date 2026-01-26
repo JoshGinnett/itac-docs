@@ -79,6 +79,10 @@ nav = [
             "Recommendations/Motors/high-eff-belts.md",
             "Recommendations/Motors/proper-size.md",
             ]},
+        {"Lighting" = [
+            {"Efficient Lamps" = "Recommendations/Lighting/led.md"},
+            "Recommendations/Lighting/controls.md",
+            ]},
     ]},
 
     {"Training" = [
