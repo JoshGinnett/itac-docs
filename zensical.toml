@@ -82,6 +82,7 @@ nav = [
         {"Lighting" = [
             {"Efficient Lamps" = "Recommendations/Lighting/led.md"},
             "Recommendations/Lighting/controls.md",
+            "Recommendations/Lighting/delamping.md",
             ]},
     ]},
 
