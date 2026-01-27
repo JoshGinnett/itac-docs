@@ -58,6 +58,7 @@ nav = [
     {"Home" = "index.md"},
     {"Recommendations" = [
         "Recommendations/how-to.md",
+        "Recommendations/how-to-review.md",
         {"Utility" = [
             "Recommendations/Utility/late.md",
             "Recommendations/Utility/tax.md",
@@ -431,3 +432,7 @@ generic = true
 [project.markdown_extensions.pymdownx.superfences]
 [project.markdown_extensions.attr_list]
 [project.markdown_extensions.pymdownx.blocks.caption]
+
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+clickable_checkbox = true
