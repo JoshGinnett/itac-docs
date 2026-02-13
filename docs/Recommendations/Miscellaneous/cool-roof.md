@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+---
+
+
 # Install Cool Roof Coating
 
 Traditional dark roofing materials absorb solar radiation, heating the building and increasing cooling loads. Cool roof coatings with high solar reflectance and thermal emittance reduce heat transfer into the building, lowering cooling energy consumption in air-conditioned facilities.

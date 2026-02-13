@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Don't Pay Sales Tax on Utilities
 
 In Connecticut, manufacturers who use at least 75% of their utility consumption for manufacturing or fabrication can purchase their utilities tax free. Similar exemptions exist in other states with varying qualification thresholds. More specific information for Connecticut can be found [here](https://ics-tax.com/utility-sales-tax-exemption/connecticut-utility-sales-tax-exemption/).

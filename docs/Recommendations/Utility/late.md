@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Don't Pay Late Fees
 
 Manufacturers can incur late fees for a variety of reasons, including insufficient cash flow or missed payment deadlines. These represent needless expenses and should be avoided when possible.

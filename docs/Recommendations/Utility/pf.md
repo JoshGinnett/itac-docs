@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Power Factor Correction
 
 Low power factor increases utility costs through reactive power demand penalties and higher apparent power (kVA) billing. Installing capacitor banks (static or dynamic) improves power factor by providing reactive power locally, reducing penalties and lowering utility bills in facilities subject to power factor-based billing structures. 

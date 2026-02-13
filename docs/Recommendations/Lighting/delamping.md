@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+---
+
+
 # Turn Off or Remove Unnecessary Lighting
 
 Many facilities operate lighting fixtures in areas where illumination is not required or exceeds recommended levels. Turning off unnecessary fixtures or permanently removing (delamping) excess fixtures eliminates wasted energy while maintaining adequate lighting for the space.

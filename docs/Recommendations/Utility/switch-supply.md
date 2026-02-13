@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Switch Energy Supplier
 
 There are various energy suppliers that clients are able to choose from, all with varying rates of electricity supply. Use the appropriate state rate board below to compare energy supply rates for your assessment location.

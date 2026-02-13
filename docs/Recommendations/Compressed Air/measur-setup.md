@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # MEASUR Setup and Weekly Power Analysis
 
 This page provides tools for analyzing compressed air system power consumption patterns to identify operating schedules and calculate average demand profiles.

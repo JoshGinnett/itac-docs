@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Install Rooftop Unit (RTU) Retrofits
 
 **ARC Code(s):** 2.7232 - Replace existing HVAC unit with high efficiency model

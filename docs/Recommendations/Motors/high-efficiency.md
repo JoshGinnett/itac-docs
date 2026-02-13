@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Upgrade to High Efficiency Motors
 
 Standard efficiency motors waste significant energy as heat during operation. Upgrading to NEMA Premium high efficiency motors reduces electrical consumption, particularly in motors that run continuously or for long hours on constant loads like pumps, fans, and compressors.

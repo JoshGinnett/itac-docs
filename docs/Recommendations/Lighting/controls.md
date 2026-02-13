@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+---
+
+
 # Install Interior Lighting Controls
 
 Interior lighting systems often operate continuously or on manual switches, consuming energy when spaces are unoccupied or when daylight provides adequate illumination. Installing occupancy sensors, daylight dimming controls, or networked lighting control systems reduces lighting energy consumption by automatically adjusting power based on occupancy and available daylight.
