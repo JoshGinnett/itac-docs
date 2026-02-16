@@ -6,6 +6,7 @@ hide:
 # Compressor Heat Recovery
 
 Recovering waste heat from electric air compressors can offset heating fuel consumption in facilities with space heating or process heating loads. The approach accounts for the thermodynamic reality that not all electrical input to a compressor becomes recoverable waste heat, and that not all recoverable heat necessarily displaces purchased heating fuel.
+
 **ARC Code(s):** X.XXXX
 
 ## Technical Background
@@ -14,9 +15,9 @@ Electric air compressors convert electrical energy into compressed air and waste
 
 For a typical industrial air compressor, approximately 80% to 93% of input electrical energy is converted to heat rejected through the oil cooler, aftercooler, and compressor housing. The DOE/Compressed Air Challenge *Sourcebook* uses a baseline assumption of roughly 80% recoverable heat at full load, yielding approximately 50,000 Btu/hr per 100 cfm of compressor capacity.
 
-Heat recovery systems capture this rejected heat, most commonly from the oil cooler loop on lubricant-injected rotary screw compressors, and transfer it to a useful heating load such as space heating, domestic hot water preheat, or process heating. The recovered heat displaces fuel that would otherwise be consumed by the facility's existing heating system.
+The simplest form of heat recovery is air-to-air exhaust venting: instead of venting the heated compressor room air to the outdoors, ductwork and dampers redirect the warm exhaust air into adjacent facility spaces during the heating season. This approach displaces fuel that would otherwise be consumed by the facility's existing heating system.
 
-## Background and Conversion Factors
+## Background 
 
 The fundamental unit conversion underlying this calculation is:
 
@@ -28,8 +29,6 @@ This is a standard thermodynamic equivalence (not an empirical approximation). I
 
 This conversion gives the total energy equivalent of the electrical input. It does not mean that all input energy becomes waste heat. A portion of the input energy is retained as useful work in the compressed air (i.e., the enthalpy increase of the air stream leaving the system). The remainder is rejected as heat through the compressor's cooling systems.
 
-## Heat Rejection Factor
-
 The heat rejection fraction depends on compressor type:
 
 | Compressor Type | Heat Rejection Factor | Source / Notes |
@@ -39,7 +38,7 @@ The heat rejection fraction depends on compressor type:
 | Reciprocating (air-cooled) | 0.50 to 0.70 | Lower recovery potential; heat split across cylinders and aftercooler |
 | Centrifugal | 0.80 to 0.90 | Intercooler and aftercooler are primary recovery points |
 
-For lubricant-injected rotary screw compressors (the most common type in industrial facilities), approximately 50 to 90% of the rejected heat is available in the oil cooler at temperatures of 150 to 200 F, which is suitable for space heating and domestic hot water applications. The remaining heat is in the aftercooler and is often at lower temperatures.
+For air-cooled compressors, nearly all of the rejected heat warms the compressor room air. In a typical installation, the compressor room is ventilated to prevent overheating, and this warm exhaust air (typically 20 to 40 F above ambient) is vented outdoors. Redirecting this exhaust into the facility during the heating season captures the heat at no additional energy cost.
 
 ## Calculation Methodology
 
@@ -139,18 +138,20 @@ $$
 
 ## Anticipated Costs
 
-Implementation costs for compressor heat recovery depend on the recovery method:
+Implementation costs for air-to-air compressor heat recovery include:
 
-- **Air-to-air heat recovery**: Ducting compressor room exhaust air (heated by the compressor) to adjacent spaces. Lowest cost but limited to space heating applications near the compressor room. Typical cost: $2,000 to $10,000 including ductwork and dampers.
-- **Oil-to-water heat exchanger**: Plate or shell-and-tube heat exchanger on the oil cooler loop piped to a hydronic heating system or domestic hot water preheat tank. More versatile but higher cost. Typical cost: $5,000 to $25,000 depending on capacity and piping complexity.
-- **Oil-to-air heat exchanger**: Remote radiator or unit heater fed by the compressor oil loop. Moderate cost and suitable for space heating in areas away from the compressor room. Typical cost: $3,000 to $15,000.
+- **Ductwork**: Supply and return ducts to route warm compressor room exhaust air to adjacent heated spaces. Duct sizing should maintain low static pressure to avoid interfering with the compressor's cooling airflow.
+- **Dampers**: Motorized or manual dampers to switch between venting outdoors (summer) and recirculating indoors (heating season). Automatic dampers with thermostat control are preferred.
+- **Controls**: Temperature-based controls to open/close dampers based on outdoor temperature or compressor room temperature. Prevents overheating of receiving spaces.
 
-Simple payback periods typically range from 1 to 4 years depending on:
+Typical installed cost ranges from $2,000 to $10,000 depending on duct run length, number of dampers, and control complexity.
+
+Simple payback periods typically range from 0.5 to 3 years depending on:
 
 - Compressor size and utilization (larger, heavily loaded compressors provide more recoverable heat)
 - Length of heating season (longer heating season = greater savings)
 - Fuel cost (higher fuel cost = shorter payback)
-- Proximity of heating load to compressor (shorter piping runs reduce cost)
+- Proximity of heated spaces to compressor room (shorter duct runs reduce cost)
 
 Facilities with large compressors (>50 HP), expensive heating fuel (propane, fuel oil), and long heating seasons realize the greatest savings.
 
