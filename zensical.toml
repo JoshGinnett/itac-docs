@@ -71,6 +71,7 @@ nav = [
             "Recommendations/Compressed Air/setpoint.md",
             "Recommendations/Compressed Air/high-eff.md",
             "Recommendations/Compressed Air/cold-intake.md",
+            "Recommendations/Compressed Air/heat-recovery.md",
             ]},
         {"HVAC" = [
             "Recommendations/HVAC/hvac-retrofit.md",
