@@ -298,23 +298,6 @@ Use this calculator to estimate energy and cost savings from implementing compre
     </div>
 </div>
 
-<h3 style="margin-top: 30px;">Calculation Summary</h3>
-
-<div style="overflow-x: auto; margin: 20px 0;">
-    <table id="hrSummaryTable" style="width: 100%; border-collapse: collapse; font-size: 0.85em; font-family: monospace;">
-        <thead>
-            <tr>
-                <th style="padding: 10px; text-align: left; background: var(--md-code-bg-color); border-bottom: 2px solid var(--md-default-fg-color--lightest);">Parameter</th>
-                <th style="padding: 10px; text-align: right; background: var(--md-code-bg-color); border-bottom: 2px solid var(--md-default-fg-color--lightest);">Value</th>
-                <th style="padding: 10px; text-align: left; background: var(--md-code-bg-color); border-bottom: 2px solid var(--md-default-fg-color--lightest);">Unit</th>
-            </tr>
-        </thead>
-        <tbody id="hrSummaryBody">
-            <!-- Populated by JavaScript -->
-        </tbody>
-    </table>
-</div>
-
 <div style="margin-top: 20px;">
     <button onclick="hrToggleLatex()" id="hrLatexToggle" style="padding: 10px 20px; background: var(--md-default-bg-color); border: 1px solid var(--md-default-fg-color--lightest); border-radius: 4px; cursor: pointer; color: var(--md-default-fg-color); margin-right: 10px;">Show LaTeX Table</button>
     <button onclick="hrCopyLatex()" id="hrCopyButton" style="padding: 10px 20px; background: var(--md-primary-fg-color); color: white; border: none; border-radius: 4px; cursor: pointer; display: none;">Copy to Clipboard</button>
@@ -468,66 +451,8 @@ function hrCalculate() {
         document.getElementById('hrDemandResultsRow').style.display = 'none';
     }
 
-    // Update summary table
-    hrUpdateSummaryTable();
-
     // Update LaTeX
     hrGenerateLatex();
-}
-
-function hrUpdateSummaryTable() {
-    if (!hrCalculationResults) return;
-
-    const motorPower = parseFloat(document.getElementById('motorPower').value);
-    const powerUnit = document.getElementById('powerUnit').value;
-    const rejectionFactor = parseFloat(document.getElementById('rejectionFactor').value);
-    const annualHours = parseFloat(document.getElementById('annualCompressorHours').value);
-    const heatingEfficiency = parseFloat(document.getElementById('heatingEfficiency').value);
-    const fuelCost = parseFloat(document.getElementById('fuelCost').value);
-    const heatingMonths = parseFloat(document.getElementById('heatingMonths').value);
-
-    const { qInput, qRecoverable, heatingHours, totalHeatRecovered, fuelDisplaced, energyCostSavings,
-            isElectric, kwReduction, kwMonths, demandCostSavings, totalCostSavings, fuelUnit } = hrCalculationResults;
-
-    const unitLabel = powerUnit === 'hp' ? 'HP' : 'kW';
-
-    const rows = [
-        ['Motor Power', hrFormatNumber(motorPower), unitLabel],
-        ['Heat Input (electrical equivalent)', hrFormatNumber(qInput), 'Btu/hr'],
-        ['Heat Rejection Factor', rejectionFactor.toFixed(2), ''],
-        ['Recoverable Heat', hrFormatNumber(qRecoverable), 'Btu/hr'],
-        ['Annual Operating Hours', hrFormatNumber(annualHours), 'hrs/yr'],
-        ['Heating Months', hrFormatNumber(heatingMonths), 'months/yr'],
-        ['Heating Season Hours', hrFormatNumber(heatingHours), 'hrs/yr'],
-        ['Annual Heat Recovered', hrFormatNumber(totalHeatRecovered / 1e6, 2), 'MMBtu/yr'],
-        ['Heating System Efficiency', heatingEfficiency + '%', ''],
-        ['Fuel Displaced', hrFormatNumber(fuelDisplaced, 1), fuelUnit + '/yr'],
-        ['Fuel Cost', '$' + fuelCost.toFixed(2), '/' + fuelUnit],
-        ['Energy Cost Savings', '$' + hrFormatNumber(energyCostSavings), '/yr'],
-    ];
-
-    if (isElectric) {
-        const demandRate = parseFloat(document.getElementById('hrDemandRate').value) || 0;
-        rows.push(['Demand Reduction', hrFormatNumber(kwReduction, 1), 'kW']);
-        rows.push(['Demand Savings', hrFormatNumber(kwMonths, 1), 'kW-months/yr']);
-        rows.push(['Demand Rate', '$' + demandRate.toFixed(2), '/kW-month']);
-        rows.push(['Demand Cost Savings', '$' + hrFormatNumber(demandCostSavings), '/yr']);
-        rows.push(['Total Annual Savings', '$' + hrFormatNumber(totalCostSavings), '/yr']);
-    }
-
-    const tableBody = document.getElementById('hrSummaryBody');
-    tableBody.innerHTML = '';
-
-    for (const [param, value, unit] of rows) {
-        const isSavings = param.includes('Savings') || param === 'Total Annual Savings';
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td style="padding: 8px; border-bottom: 1px solid var(--md-default-fg-color--lightest);">${param}</td>
-            <td style="padding: 8px; text-align: right; border-bottom: 1px solid var(--md-default-fg-color--lightest);${isSavings ? ' color: #4caf50; font-weight: 600;' : ''}">${value}</td>
-            <td style="padding: 8px; border-bottom: 1px solid var(--md-default-fg-color--lightest);">${unit}</td>
-        `;
-        tableBody.appendChild(row);
-    }
 }
 
 function hrGenerateLatex() {

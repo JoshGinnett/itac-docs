@@ -55,7 +55,3 @@ Jun-25  &  &  &  &  \\
 \end{tabular}
 \end{table}
 ```
-
-## Examples
-
-[Example 1](../../assets/LateFeeSample_redacted.pdf)
