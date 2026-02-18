@@ -101,3 +101,15 @@
   [data-md-color-scheme="slate"] :focus-visible {
     outline: 4px solid #4D90FE !important;
   }
+
+/* Hide the Right Sidebar globally */
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+/* Center the text/content since the sidebar is gone */
+@media screen and (min-width: 1220px) {
+  .md-content {
+    max-width: 100% !important;
+  }
+}
