@@ -103,3 +103,7 @@
 [data-md-color-scheme="slate"] :focus-visible {
   outline: 4px solid #4D90FE !important;
 }
+
+.md-sidebar--secondary {
+  display: none !important;
+}
