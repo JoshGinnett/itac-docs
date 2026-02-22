@@ -26,11 +26,11 @@ Once logged in:
 | **Business Travel Start Date** | *Date of assessment* |
 | **Business Travel End Date** | *Date of assessment* |
 | **Trip Purpose** | Research |
-| **Traveler Type** | UGRAD Student |
+| **Traveler Type** | UGRAD Student or Graduate Student |
 | **Trip Type** | In-State / Out-of-State |
-| **Includes Personal Travel?** | No *(if traveling from and to UConn)* |
+| **Includes Personal Travel?** | No *(if traveling from and to UConn/home)* |
 | **Business Purpose** | To complete an on-site energy assessment |
-| **Account Number** | 5667380 |
+| **Account Number** | ask someone |
 | **Travel Allowance** | No |
 
 When all information is entered, click **Create Report** in the lower-right corner.
@@ -82,4 +82,4 @@ Once your expense and receipt are attached:
 1. Review all entries for accuracy  
 2. Click **Submit Report**  
 
-The report will be routed to the **Payroll Department** for approval and processing.
+The report will be routed to about a hundred different people approval and processing. You should your reimbursement witin 30 days. 
