@@ -304,6 +304,38 @@ This calculator analyzes compressed air power consumption by day of week and hou
 
 <div id="averageChart" style="margin: 20px 0; height: 400px; display: none;"></div>
 
+<div id="eflhSection" style="margin: 20px 0; padding: 15px; background: var(--md-default-bg-color); border-radius: 6px; display: none;">
+    <h3 style="margin-top: 0;">Step 5: Equivalent Fully Loaded Hours</h3>
+    <p style="font-size: 0.9em; color: var(--md-default-fg-color--light); margin-bottom: 10px;">
+        Enter the compressor nameplate power to calculate equivalent fully loaded operating hours per year.
+    </p>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; align-items: end;">
+        <div>
+            <label for="nameplatePower" style="display: block; margin-bottom: 5px; font-weight: 500;">Nameplate Power (kW):</label>
+            <input type="number" id="nameplatePower" placeholder="e.g. 37" step="0.1" min="0" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; background: white; color: black;">
+        </div>
+        <div>
+            <button onclick="calculateEFLH()" style="padding: 10px 20px; background: #4051b5; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500;">Calculate EFLH</button>
+        </div>
+    </div>
+    <div id="eflhResult" style="margin-top: 15px; display: none;">
+        <table style="width: 100%; border-collapse: collapse; margin: 10px 0;">
+            <tr style="border-bottom: 1px solid var(--md-default-fg-color--lightest);">
+                <td style="padding: 8px;">24-Hour Average Power</td>
+                <td id="eflhAvgPower" style="padding: 8px; text-align: right; font-weight: 500;"></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--md-default-fg-color--lightest);">
+                <td style="padding: 8px;">Nameplate Power</td>
+                <td id="eflhNameplate" style="padding: 8px; text-align: right; font-weight: 500;"></td>
+            </tr>
+            <tr style="border-top: 2px solid var(--md-default-fg-color--lightest); font-weight: bold;">
+                <td style="padding: 8px;">Equivalent Fully Loaded Hours</td>
+                <td id="eflhValue" style="padding: 8px; text-align: right; color: #4051b5;"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
 </div>
 
 <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
@@ -312,6 +344,7 @@ This calculator analyzes compressed air power consumption by day of week and hou
 let csvData = [];
 let headers = [];
 let hourlyByDayData = null;
+let twentyFourHrAvg = null;
 
 function loadCSV() {
     const fileInput = document.getElementById('csvFileInput');
@@ -706,6 +739,7 @@ function calculateAverageProfile() {
     });
 
     const totalAvg = hourlyAverages.reduce((sum, d) => sum + d.avgPower, 0) / 24;
+    twentyFourHrAvg = totalAvg;
     tableHTML += `
         <tr style="border-top: 2px solid var(--md-default-fg-color--lightest); font-weight: bold;">
             <td style="padding: 8px;">24-Hour Average</td>
@@ -718,6 +752,9 @@ function calculateAverageProfile() {
 
     document.getElementById('averageResultsContent').innerHTML = tableHTML;
     document.getElementById('averageResults').style.display = 'block';
+
+    // Show the EFLH section
+    document.getElementById('eflhSection').style.display = 'block';
 
     // Plot average profile
     const trace = {
@@ -753,5 +790,25 @@ function calculateAverageProfile() {
 
     document.getElementById('averageChart').style.display = 'block';
     Plotly.newPlot('averageChart', [trace], layout, config);
+}
+
+function calculateEFLH() {
+    if (twentyFourHrAvg === null) {
+        alert('Please calculate the average profile first');
+        return;
+    }
+
+    const nameplatePower = parseFloat(document.getElementById('nameplatePower').value);
+    if (isNaN(nameplatePower) || nameplatePower <= 0) {
+        alert('Please enter a valid nameplate power (kW)');
+        return;
+    }
+
+    const eflh = (twentyFourHrAvg / nameplatePower) * 8760;
+
+    document.getElementById('eflhAvgPower').textContent = twentyFourHrAvg.toFixed(2) + ' kW';
+    document.getElementById('eflhNameplate').textContent = nameplatePower.toFixed(2) + ' kW';
+    document.getElementById('eflhValue').textContent = eflh.toFixed(0) + ' hrs/yr';
+    document.getElementById('eflhResult').style.display = 'block';
 }
 </script>
